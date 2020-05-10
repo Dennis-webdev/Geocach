@@ -19,12 +19,18 @@
         </div>
         <div class="hint-wrapper">
             <div class="coordinates">
-                <div id="value">test</div>
-                <button id="copyButton">copy</button>
+                <div id="value"></div>
+                <!-- <button id="copyButton">copy</button> -->
             </div>
-            <div id="fstHint">test</div>
-            <div id="sndHint">test</div>
-            <div id="trdHint">test</div>
+            <div class="item-wrapper">
+                <div id="fstHint"></div>
+            </div>
+            <div class="item-wrapper">
+                <div id="sndHint"></div>
+            </div>
+            <div class="item-wrapper">
+                <div id="trdHint"></div>
+            </div>
         </div>
     </main>
     <script>
@@ -32,38 +38,122 @@
             "Cg7PB6kjtW": { 
                 name: "Beversee",
                 coordinates: "51.637898,7.637542",
-                fstHint: "hahsah",
-                sndHint: "hahsah",
-                trdHint: "hahsah"
+                fstHint: "Habt ihr Kekse und Kakao mitgenommen?",
+                sndHint: "schaut an der Bank, wo wir an Weinachten immer sind",
+                trdHint: "drunter am linken Bein"
             },
             "H9V0EHaNDu": { 
                 name: "Großes Holz",
                 coordinates: "51.625173,7.607230",
-                fstHint: "hahsah",
-                sndHint: "hahsah",
-                trdHint: "hahsah"
+                fstHint: "Setzt euch, gönnt euch ne kurze Pause",
+                sndHint: "guckt hinter der Bank",
+                trdHint: "unterm Stein"
             },
             "74yOIqYd4G": { 
                 name: "Mamas Arbeit",
                 coordinates: "51.611488,7.581358",
-                fstHint: "hahsah",
-                sndHint: "hahsah",
-                trdHint: "hahsah"
+                fstHint: "Abgeschlossen schade, aber vllt. findet ihr ja einen Schlüssel",
+                sndHint: "guckt am Eingang",
+                trdHint: "unter der Matte"
+            },
+            "itHabUprc7": { 
+                name: "Die Brücke",
+                coordinates: "51.616695,7.557325",
+                fstHint: "Der Schlüssel hat zwar gerade nicht gepasst, aber vllt passt er ja hier",
+                sndHint: "schaut auf der Brücke",
+                trdHint: "bei den Schlössern"
+            }, 
+            "JBHztLdRwl": { 
+                name: "Bäcker",
+                coordinates: "51.625155,7.551434",
+                fstHint: "Den nächsten Tipp geben wir euch nur im Tausch gegen ein Schokobrötchen haha",
+                sndHint: "in der Bäckerei",
+                trdHint: "fragt den Verkäufer"
+            }, 
+            "TaJwokHg9G": { 
+                name: "Kapelle",
+                coordinates: "51.634502,7.562376",
+                fstHint: "Das Schild könnte euch verraten, wo es weiter geht",
+                sndHint: "schaut genau hin",
+                trdHint: "auch dahinter"
+            }, 
+            "BtYDJe1GOV": { 
+                name: "Gerlichbach",
+                coordinates: "51.648880,7.572982",
+                fstHint: "Genießt einen Moment die schöne Aussicht",
+                sndHint: "guckt am Tor",
+                trdHint: "dahinter links"
+            }, 
+            "IW8ZWsafl5": { 
+                name: "Amazon",
+                coordinates: "51.651166,7.590858",
+                fstHint: "Ihr seit zu früh, es ist noch gar nicht Winter",
+                sndHint: "schaut am Schild",
+                trdHint: "auf dem Schild steht 'Kein Winterdienst'"
+            }, 
+            "29LvVBOLO7": { 
+                name: "Stadtpark",
+                coordinates: "51.658258,7.634453",
+                fstHint: "Habt ihr Kohle dabei? dann könnten wir schwimmen gehen",
+                sndHint: "schaut am Kohlewagen",
+                trdHint: "in einer Ecke unter den Steinen"
+            }, 
+            "UHkoxZoxG2": { 
+                name: "Kino",
+                coordinates: "51.664783,7.636853",
+                fstHint: "Lust bald mal wieder einen Film zu gucken? welchen denn?",
+                sndHint: "untersucht die Werbetafeln",
+                trdHint: "rechts dahinter"
+            }, 
+            "jp0Mofplzj": { 
+                name: "Lippebrücke",
+                coordinates: "51.658238,7.656721",
+                fstHint: "Ich glaubt hier findet ihr den nächsten Hinweis nicht",
+                sndHint: "geht unter die Brücke",
+                trdHint: "links in der Mauer"
+            }, 
+            "GwQ0x6lqNJ": { 
+                name: "Ewiges Feuer",
+                coordinates: "51.662239,7.693896",
+                fstHint: "Das war ein langes Stück am Kanal entlang, ihr habt euch die letzt Pause verdient",
+                sndHint: "an der rechten Bank",
+                trdHint: "dadrunter am rechten Bein"
+            }, 
+            "D8cpnLWj6R": { 
+                name: "Omas Elternhaus",
+                coordinates: "51.643377,7.652497",
+                fstHint: "Ich wette du kennst dieses Grundstück gut",
+                sndHint: "in der linken Hälfte unter der Hecke",
+                trdHint: "im Kies"
+            }, 
+            "1cS5j76KHM": { 
+                name: "Haus beim Pizzamann",
+                coordinates: "51.621991,7.658638",
+                fstHint: "Bist du hier nicht auch schonmal durchgegangen?",
+                sndHint: "an der Hecke am Eingang",
+                trdHint: "rechts in der Hecke"
+            }, 
+            "asj0UdR0rR": { 
+                name: "Geschafft",
+                coordinates: "Zuhause",
+                fstHint: "Herzlichen Glückwunsch ihr habts geschafft ^^ ihr wart die Schnellsten bis jetzt",
+                sndHint: "",
+                trdHint: ""
             } 
         };
         
-        const copyButton = document.querySelector("#copyButton");
-        copyButton.addEventListener("click", function() {
-            var value = document.querySelector("#value");
-            var range = document.createRange();
-            range.selectNode(value);
-            window.getSelection().addRange(range);
-            document.execCommand("copy");
-            window.getSelection().removeRange(range);
-        });
+        // const copyButton = document.querySelector("#copyButton");
+        // copyButton.addEventListener("click", function() {
+        //     var value = document.querySelector("#value");
+        //     var range = document.createRange();
+        //     range.selectNode(value);
+        //     window.getSelection().addRange(range);
+        //     document.execCommand("copy");
+        //     window.getSelection().removeRange(range);
+        // });
 
         const input = document.querySelector("#input");
-        input.addEventListener("input", function() {
+        input.addEventListener("change", function() {
             document.getElementById("value").innerText 
                 = js[this.value].coordinates;
             document.getElementById("fstHint").innerText 
@@ -72,6 +162,26 @@
                 = js[this.value].sndHint;
             document.getElementById("trdHint").innerText 
                 = js[this.value].trdHint;
+        });
+
+        const zwei = document.getElementById("sndHint");
+        zwei.addEventListener("click", function() {
+            console.log(zwei.style.backgroundColor);
+            if (zwei.style.backgroundColor === "white") {
+                zwei.style.backgroundColor = "transparent";
+            } else {
+                zwei.style.backgroundColor = "white";
+            }
+        });
+
+        const drei = document.getElementById("trdHint");
+        drei.addEventListener("click", function() {
+            console.log(drei.style.backgroundColor);
+            if (drei.style.backgroundColor === "white") {
+                drei.style.backgroundColor = "transparent";
+            } else {
+                drei.style.backgroundColor = "white";
+            }
         });
     </script>
 </body>

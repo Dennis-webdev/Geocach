@@ -34,13 +34,34 @@ body {
     justify-content: center;
 }
 
-.coordinates {
+/* .coordinates {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+} */
+
+.item-wrapper, .coordinates {
+    padding: 20px;
+    width: calc(100vw - 40px);
+    height: 100%;
+    text-align: center;
 }
 
-div[id] {
-    padding: 20px;
+#fstHint {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+#sndHint {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+#trdHint {
+    width: 100%;
+    height: 100%;
+    background-color: white;
 }
