@@ -152,6 +152,24 @@
         //     window.getSelection().removeRange(range);
         // });
 
+        const zwei = document.getElementById("sndHint");
+        zwei.addEventListener("click", function() {
+            if (zwei.style.backgroundColor === "white") {
+                zwei.style.backgroundColor = "transparent";
+            } else {
+                zwei.style.backgroundColor = "white";
+            }
+        });
+
+        const drei = document.getElementById("trdHint");
+        drei.addEventListener("click", function() {
+            if (drei.style.backgroundColor === "white") {
+                drei.style.backgroundColor = "transparent";
+            } else {
+                drei.style.backgroundColor = "white";
+            }
+        });
+
         const input = document.querySelector("#input");
         input.addEventListener("change", function() {
             document.getElementById("value").innerText 
@@ -162,26 +180,8 @@
                 = js[this.value].sndHint;
             document.getElementById("trdHint").innerText 
                 = js[this.value].trdHint;
-        });
-
-        const zwei = document.getElementById("sndHint");
-        zwei.addEventListener("click", function() {
-            console.log(zwei.style.backgroundColor);
-            if (zwei.style.backgroundColor === "white") {
-                zwei.style.backgroundColor = "transparent";
-            } else {
-                zwei.style.backgroundColor = "white";
-            }
-        });
-
-        const drei = document.getElementById("trdHint");
-        drei.addEventListener("click", function() {
-            console.log(drei.style.backgroundColor);
-            if (drei.style.backgroundColor === "white") {
-                drei.style.backgroundColor = "transparent";
-            } else {
-                drei.style.backgroundColor = "white";
-            }
+            zwei.style.backgroundColor = "white"
+            drei.style.backgroundColor = "white"
         });
     </script>
 </body>
