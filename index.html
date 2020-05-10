@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Geocach</title>
+</head>
+<body>
+    <header class="header">Geocach am Muttertag ^^</header>
+    <main>
+        <div class="input-wrapper">
+            <form class="form" onsubmit="return false">
+                <input
+                    id="input"
+                    type="text" 
+                    placeholder="10-stelligen Code hier eingeben">
+            </form>
+        </div>
+        <div class="hint-wrapper">
+            <div class="coordinates">
+                <div id="value">test</div>
+                <button id="copyButton">copy</button>
+            </div>
+            <div id="fstHint">test</div>
+            <div id="sndHint">test</div>
+            <div id="trdHint">test</div>
+        </div>
+    </main>
+    <script>
+        var js = { 
+            "Cg7PB6kjtW": { 
+                name: "Beversee",
+                coordinates: "51.637898,7.637542",
+                fstHint: "hahsah",
+                sndHint: "hahsah",
+                trdHint: "hahsah"
+            },
+            "H9V0EHaNDu": { 
+                name: "Großes Holz",
+                coordinates: "51.625173,7.607230",
+                fstHint: "hahsah",
+                sndHint: "hahsah",
+                trdHint: "hahsah"
+            },
+            "74yOIqYd4G": { 
+                name: "Mamas Arbeit",
+                coordinates: "51.611488,7.581358",
+                fstHint: "hahsah",
+                sndHint: "hahsah",
+                trdHint: "hahsah"
+            } 
+        };
+        
+        const copyButton = document.querySelector("#copyButton");
+        copyButton.addEventListener("click", function() {
+            var value = document.querySelector("#value");
+            var range = document.createRange();
+            range.selectNode(value);
+            window.getSelection().addRange(range);
+            document.execCommand("copy");
+            window.getSelection().removeRange(range);
+        });
+
+        const input = document.querySelector("#input");
+        input.addEventListener("input", function() {
+            document.getElementById("value").innerText 
+                = js[this.value].coordinates;
+            document.getElementById("fstHint").innerText 
+                = js[this.value].fstHint;
+            document.getElementById("sndHint").innerText 
+                = js[this.value].sndHint;
+            document.getElementById("trdHint").innerText 
+                = js[this.value].trdHint;
+        });
+    </script>
+</body>
+</html>
